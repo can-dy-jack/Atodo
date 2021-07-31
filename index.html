@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+<!--        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+<!--        <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+    <title>Atodo</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="tag">
+        <div class="left">
+            <h2 id="nowDate">2021/7/29</h2>
+            <div class="btn-box">
+                <div onclick="changeTodo()" class="changeBtn checked" id="todoCheck">代办事项</div>
+                <div onclick="changeDone()" class="changeBtn" id="doneCheck">已完成</div>
+                <a href="./main.html" class="btn">其它模式</a>
+            </div>
+            <div class="add-box">
+                <span class="add" onclick="changeAdd()">
+                    <svg t="1627527766844" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="885" width="32" height="32"><path d="M512 85.333333a426.666667 426.666667 0 1 0 426.666667 426.666667A426.666667 426.666667 0 0 0 512 85.333333z m213.333333 469.333334h-170.666666v170.666666h-85.333334v-170.666666h-170.666666v-85.333334h170.666666v-170.666666h85.333334v170.666666h170.666666z" fill="#20C997" p-id="886"></path></svg>
+                </span>
+                <span onclick="changeAdd()" class="add">新建</span>
+            </div>
+        </div>
+        <div class="right r-none" id="RNone">
+            <button type="button" class="btn-close" aria-label="Close"></button>
+            <h1>今日待完成任务
+                <div class="spinner-grow text-danger" role="status" id="loading">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </h1>
+            <div id="a-todos" class="taskBody">
+                <div class="todo-list">
+                    <div>读书</div>
+                    <div>12:13</div>
+                    <div class="todo-btn">
+                        <button type="button" class="btn btn-outline-info">完成</button>
+                        <button type="button" class="btn btn-outline-info">删除</button>
+                    </div>
+                </div>
+                <div class="todo-list">
+                    <div>观看东京奥运会男子乒乓球单打决赛</div>
+                    <div>20:13</div>
+                    <div class="todo-btn">
+                        <button type="button" class="btn btn-outline-info">完成</button>
+                        <button type="button" class="btn btn-outline-info">删除</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right r-add visually-hidden" id="RAdd">
+            <button type="button" class="btn-close" aria-label="Close"></button>
+            <h1>新建任务</h1>
+            <div class="taskBody addBody">
+                <form class="input-group">
+                    <span class="input-group-text" id="addonTask">设置任务</span>
+                    <input type="text" id="setTask" class="form-control" aria-describedby='addonTask' placeholder="读书" aria-label="读书"/>
+                </form>
+                <form class="input-group ig-time" title="可以不设置">
+                    <span class="input-group-text" id="addonTime">设置时间</span>
+                    <input type="time" id="setTime" class="form-control" aria-describedby='addonTime'>
+                </form>
+                <button type="button" class="btn btn-success" id="add-btn" title="注意：任务重复会覆盖上一次的任务">确定</button>
+
+                <div class="alert alert-primary d-flex align-items-center" role="alert" style="margin: 1rem 0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                    <div>注意：任务重复会覆盖上一次的任务。</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="right r-add visually-hidden" id="RDone">
+            <button type="button" class="btn-close" aria-label="Close"></button>
+            <h1>已完成</h1>
+            <div class="taskBody" id="doneTodos">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="fcc1" checked>
+                    <label class="form-check-label" for="fcc1">
+                        看2020欧洲杯总决赛
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="fcc2" checked>
+                    <label class="form-check-label" for="fcc2">
+                        找工作
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--    <script src="./renderer.js"></script>-->
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!--  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="./asset/js/dom.js"></script>
+    <script src="./asset/js/toggole.js"></script>
+    <script src="./asset/js/todo.js"></script>
+</body>
+</html>

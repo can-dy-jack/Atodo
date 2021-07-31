@@ -1,0 +1,22 @@
+{
+  "name": "atodo",
+  "version": "1.0.5",
+  "description": "todo list application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pw": "electron-packager ./ ATodo --overwrite --platform=win32 --asar --out=Atodo --prune=true --icon=./icon.ico --app-version 1.0.5"
+  },
+  "author": "kart jim",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^13.1.7"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.2",
+    "electron-localstorage": "^1.0.5",
+    "jquery": "^3.6.0",
+    "yarn": "^1.22.11"
+  }
+}

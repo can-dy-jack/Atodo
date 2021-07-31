@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+<!--    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+<!--    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+    <title>Atodo</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="asset/css/head.css">
+      <link rel="stylesheet" href="asset/css/main.css">
+      <link rel="stylesheet" href="asset/css/index.css">
+      <link rel="stylesheet" href="asset/css/foot.css">
+
+  </head>
+  <body>
+
+  <div class="hello-box">
+    <p>
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+       工具信息<span class="badge bg-secondary">2</span>
+      </a>
+        <a href="./index.html" class="btn btn-outline-warning">回退</a>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        <h3>Electron 应用 - Atodo</h3>
+          <div>We are using Node.js <span id="node-version"></span>
+              ,Chromium <span id="chrome-version"></span>, and Electron
+              <span id="electron-version"></span>.</div>
+          <div>todo list 软件</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="todos-box">
+      <h1 class="tools">toods</h1>
+      <div class="d-flex align-items-center text-danger visually-hidden"> <!--visually-hidden-->
+          <strong>Loading...</strong>
+          <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+      </div>
+
+      <div class="todos">
+          <div class="todo">
+
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcd11">
+                  <label class="form-check-label" for="fcd11">
+                      vue 组件化
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcd12">
+                  <label class="form-check-label" for="fcd12">
+                      React 组件化
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcd13">
+                  <label class="form-check-label" for="fcd13">
+                      Angular 组件化
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcd14">
+                  <label class="form-check-label" for="fcd14">
+                      组件化
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcd15">
+                  <label class="form-check-label" for="fcd15">
+                      组件化
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcd16">
+                  <label class="form-check-label" for="fcd16">
+                      组件化
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcd17">
+                  <label class="form-check-label" for="fcd17">
+                      组件化
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcd18">
+                  <label class="form-check-label" for="fcd18">
+                      组件化
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcd19">
+                  <label class="form-check-label" for="fcd19">
+                      信息储存 - 数据库？ - electron有？
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcd110">
+                  <label class="form-check-label" for="fcd110">
+                      动态DOM生成 与 可视化 - VUE
+                  </label>
+              </div>
+              <div class="add">
+                  <a class="btn btn-outline-success">Add</a>
+              </div>
+          </div>
+          <div class="todo">
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcd21">
+                  <label class="form-check-label" for="fcd21">
+                      Default checkbox
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcd22">
+                  <label class="form-check-label" for="fcd22">
+                      Default checkbox
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcd23">
+                  <label class="form-check-label" for="fcd23">
+                      Default checkbox
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcc24" checked>
+                  <label class="form-check-label" for="fcc24">
+                      Checked checkbox
+                  </label>
+              </div>
+              <div>
+                  <a class="btn btn-outline-success">Add</a>
+              </div>
+          </div>
+          <div class="todo">
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcd31">
+                  <label class="form-check-label" for="fcd31">
+                      Default checkbox
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcd32">
+                  <label class="form-check-label" for="fcd32">
+                      Default checkbox
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcd33">
+                  <label class="form-check-label" for="fcd33">
+                      Default checkbox
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="fcc34" checked>
+                  <label class="form-check-label" for="fcc34">
+                      Checked checkbox
+                  </label>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+<!--    <script src="./renderer.js"></script>-->
+
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<!--  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
+  <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

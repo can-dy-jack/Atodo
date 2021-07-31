@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    --mainColor: #20C9A7;
+}
+@font-face {
+    font-family: baotu;
+    src: url('./asset/font/包图小白体.ttf');
+}
+@font-face {
+    font-family: HYqihei;
+    src: url("./asset/font/HYQiHei-75W.otf");
+}
+@font-face {
+    font-family: HYqihei2;
+    src: url("./asset/font/HYQiHei-50S.otf");
+}
+/* 使无边框模式 可以拖拽，但会导致按钮失效 */
+body{
+    -webkit-app-region: drag;
+}
+/* 解除按钮封印 */
+div.changeBtn,span.add,button,a,.right .taskBody{
+    -webkit-app-region: no-drag;
+}
+
+.tag{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;flex-direction: row;
+}
+.left{
+    width: 30%;
+    height: 100vh;
+    background-color: #f9f9f9;
+    display: flex;align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: #888;
+}
+.left h2{
+    margin: 3rem 0;
+    color: #20C997;
+}
+.left .btn-box{
+    display: flex;
+    flex-direction: column;
+}
+.left .btn-box .changeBtn{
+    margin-bottom: 14px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 2px;
+    height: 36px;cursor: pointer;
+    line-height: 35px;
+    border-left: 1px solid #20C9A7;
+}
+.checked{
+    background-color: #20C9A7;
+    color: #fafafa;
+}
+.checked:hover{
+    background-color: #1cb697;
+    border: none;
+}
+
+.left .add-box{
+    position: absolute;
+    bottom: 3rem;
+    display: flex;align-items: center;
+    flex-direction: row;
+}
+.left .add-box span{
+    cursor: pointer;
+    margin: 0 3px;
+}
+.right{
+    width: 70%;
+    height: 100vh;
+    background-color: #ffffff;
+    position: relative;
+}
+.right .btn-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.right h1{
+    margin: 60px 0 40px 40px;
+}
+
+/* taskBody -- all .right have*/
+.right .taskBody{
+    margin: 1rem 40px;
+}
+
+/* private */
+/* taskBody */
+.right .taskBody form{
+    margin: 2rem 0;
+}
+.right .taskBody .ig-time{
+    width: 200px;
+}
+/* #a-todos */
+.right #a-todos{
+    font-size: 18px;
+    font-family:  HYqihei2, '楷体', '华文楷体', sans-serif;
+}
+.right #a-todos .todo-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px 0;
+}
+
+.right #doneTodos {
+    font-family: baotu, '楷体',sans-serif;
+    font-size: 30px;
+}
