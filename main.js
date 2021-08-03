@@ -18,7 +18,7 @@ function createWindow () {
     },
     icon: iconPath, // 边框上的图标
     // transparent: true, // 透明
-    frame: false // 无边框
+    // frame: false // 无边框
   })
   // win.removeMenu()  // 无边框
 

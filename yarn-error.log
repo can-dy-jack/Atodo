@@ -1,0 +1,48 @@
+Arguments: 
+  D:\Program Files\node\node.exe C:\Users\26963\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @fortawesome/fontawesome-free
+
+PATH: 
+  D:\Program Files (x86)\ActiveState Komodo IDE 12\;C:\Program Files\Python39\Scripts\;C:\Program Files\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\Program Files (x86)\matlab\runtime\win64;D:\Program Files (x86)\matlab\bin;D:\Program Files (x86)\matlab\polyspace\bin;D:\Program Files\node\;C:\ProgramData\chocolatey\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Users\26963\.cargo\bin;C:\Users\26963\AppData\Local\Microsoft\WindowsApps;C:\Users\26963\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\26963\AppData\Local\GitHubDesktop\bin;C:\Users\26963\AppData\Roaming\npm;D:\Program Files\PyCharm 2021.1.2\bin;C:\Users\26963\.dotnet\tools
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  14.17.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: unexpected end of file
+      at Zlib.zlibOnError [as onerror] (zlib.js:181:17)
+
+npm manifest: 
+  {
+    "name": "atodo",
+    "version": "1.0.5",
+    "description": "todo list application",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron .",
+      "pw": "electron-packager ./ ATodo --overwrite --platform=win32 --asar --out=Atodo --prune=true --icon=./icon.ico --app-version 1.0.5"
+    },
+    "author": "kart jim",
+    "license": "MIT",
+    "devDependencies": {
+      "electron": "^13.1.7"
+    },
+    "dependencies": {
+      "@popperjs/core": "^2.9.2",
+      "bootstrap": "^5.0.2",
+      "electron-localstorage": "^1.0.5",
+      "jquery": "^3.6.0",
+      "yarn": "^1.22.11"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

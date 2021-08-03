@@ -1,0 +1,11 @@
+header,footer{
+    -webkit-app-region: no-drag;
+}
+
+.pro{
+    background-color: #3f3143;
+    cursor: pointer;
+    padding: 1px;
+    color: white;
+    border-radius: 3px;
+}

@@ -1,8 +1,63 @@
-
-.hello-box{
-    position: fixed;
-    left: 10px;top: 10px;
-    /*display: flex;*/
+*{
+    margin: 0;
+    padding: 0;
 }
-/*.hello-box .collapse .card{}*/
+:root{
+    --main: #f3f4f5;
+    --flomo: #55BB8E;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.flomoBox{
+    width: 820px;
+    height: 100%;
+    display: flex;flex-direction: row;
+}
+.flomoBox .left{
+    width: 240px;
+    height: 100%;
 
+    /*background-color: #e3e39099;*/
+}
+.flomoBox .left header{
+    display: flex;flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+
+
+.flomoBox .right{
+    width: 580px;
+    height: 100%;
+    /*background-color: #34e3e322;*/
+}
+.flomoBox .right header{
+    display: flex;flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+.flomoBox .right header .head-title span{
+    cursor: pointer;
+}
+.flomoBox .right header .input-group{
+    width: 260px;
+}
+
+footer{
+    position: absolute;
+    bottom: 10px;
+    color: var(--flomo);
+}

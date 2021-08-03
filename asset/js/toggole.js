@@ -2,15 +2,12 @@
 const ipc = require('electron').ipcRenderer;
 
 const btnClose = document.querySelectorAll('.btn-close');
-btnClose[0].addEventListener('click', ()=>{
-    ipc.send('win-hide');
-})
-btnClose[1].addEventListener('click', ()=>{
-    ipc.send('win-hide');
-})
-btnClose[2].addEventListener('click', ()=>{
-    ipc.send('win-hide');
-})
+let btnCloseNumber = btnClose.length;
+for (let i=0;i<btnCloseNumber;i++){
+    btnClose[i].addEventListener('click', ()=>{
+        ipc.send('win-hide');
+    })
+}
 
 
 function changeAdd(){
