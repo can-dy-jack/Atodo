@@ -3,7 +3,7 @@ const path = require('path')
 const ipcm = require('electron').ipcMain;
 
 
-const iconPath = path.join(__dirname, './asset/img/Atodo.png');   // 应用运行时的标题栏图标
+const iconPath = path.join(__dirname, '/asset/img/Atodo.png');   // 应用运行时的标题栏图标
 let tray = null;
 
 function createWindow () {

@@ -1,0 +1,91 @@
+
+/* right */
+.flomoBox .right{
+    width: 580px;
+    height: 100%;
+}
+.flomoBox .right header{
+    display: flex;flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+    margin: 10px 20px;
+}
+.flomoBox .right header .head-title {
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+}
+.flomoBox .right header .head-title span{
+    cursor: pointer;
+}
+.flomoBox .right header .input-group{
+    width: 260px;
+}
+
+
+.right .inputBox{
+    background-color: white;
+    margin: 10px 20px;
+    width: calc(100% - 40px);
+    border-radius: 6px;
+    border: 2px solid rgb(200,211,200);
+    height: 100px; /*   */
+}
+.right .inputBox textarea{
+    margin: 20px;
+    height: 30px;   /*    */
+    width: calc(100% - 40px);
+    outline: none;border: none;
+    overflow: auto;
+}
+textarea::-webkit-scrollbar {
+    width: 0!important;
+    height: 0!important;
+}
+.right .inputBox .tools{
+    transform: translateY(-20px);
+    margin-left: 20px;
+    position: relative;
+}
+.right .inputBox .tools span{
+    height: 24px;
+    line-height: 24px;
+    margin-right: 4px;
+    cursor: pointer;
+    padding: 4px;
+}
+.right .inputBox .tools button{
+    outline: none;
+    border: none;
+    background-color: var(--flomo);
+    border-radius: 6px;
+    font-size: 12px;
+    padding: 6px 12px;
+    color: white;
+    position: absolute;right: 5px;
+}
+
+.right .textArea{
+    overflow: auto;
+    height: calc(100vh - 200px);
+    width: 100%;
+}
+.right .textArea .text{
+    width: calc(100% - 40px);
+    transform: translateX(20px);
+    min-height: 160px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.right .textArea .text:hover{
+    box-shadow: 0 0 12px rgba(180,170,180,.8);
+}
+.right .textArea::-webkit-scrollbar {
+    width: 0!important;
+    height: 0!important;
+}
+

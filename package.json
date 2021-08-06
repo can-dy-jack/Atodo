@@ -1,11 +1,11 @@
 {
-  "name": "atodo",
-  "version": "1.0.5",
+  "name": "Atodo",
+  "version": "1.0.6",
   "description": "todo list application",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "pw": "electron-packager ./ ATodo --overwrite --platform=win32 --asar --out=Atodo --prune=true --icon=./icon.ico --app-version 1.0.5"
+    "pw": "electron-packager ./ ATodo --overwrite --platform=win32 --asar --out=Atodo --prune=true --icon=./icon.ico --app-version 1.0.6"
   },
   "author": "kart jim",
   "license": "MIT",

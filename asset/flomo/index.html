@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <title>flomo</title>
     <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <!-- Font Awesome solid + brand -->
-    <!--    <script defer src="../../node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>-->
-    <!--    <script defer src="../../node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>-->
-    <!--    <script defer src="../../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>-->
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="private.css">
+   
+    <link rel="stylesheet" href="head.css">
+    <link rel="stylesheet" href="left.css">
+    <link rel="stylesheet" href="right.css">
 </head>
 <body>
 <button type="button" class="btn-close" aria-label="Close"></button>
@@ -40,11 +38,103 @@
                 </span>
             </div>
         </header>
+        <div class="cal">
+            <div class="cal-number">
+                <div>7</div>
+                <div>7</div>
+                <div>20</div>
+            </div>
+            <div class="cal-text">
+                <div>MEMO</div>
+                <div>TAG</div>
+                <div>DAY</div>
+            </div>
+        </div>
+
+        <div class="calendar">
+            <div class="c-1">
+               <button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+            </div>
+            <div class="c-2">
+                <button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+             </div>
+             <div class="c-3">
+                <button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+             </div>
+             <div class="c-4">
+                <button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+             </div>
+             <div class="c-5">
+                <button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+             </div>
+             <div class="c-6">
+                <button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+             </div>
+             <div class="c-7">
+                <button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+             </div>
+             <div class="month">
+                 <span>5月</span>
+                 <span>6月</span>
+                 <span>7月</span>
+                 <span>8月</span>
+             </div>
+        </div>
+
+        <section>
+            <div class="toggle">
+                <div class="selected">
+                    <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                        <path d="M443.28 543.456a36 36 0 0 1 36 36v264.528a36 36 0 0 1-36 36H180.96a36 36 0 0 1-36-36V579.456a36 36 0 0 1 36-36h262.32z m400 0a36 36 0 0 1 36 36v264.528a36 36 0 0 1-36 36H580.96a36 36 0 0 1-36-36V579.456a36 36 0 0 1 36-36h262.32z m-436 72H216.96v192.528h190.32V615.456z m400 0H616.96v192.528h190.32V615.456zM754.368 84L939.84 269.488a36 36 0 0 1 0 50.896l-187.04 187.04a36 36 0 0 1-50.928 0L516.4 321.968a36 36 0 0 1 0-50.912l187.04-187.04a36 36 0 0 1 50.928 0zM443.28 143.456a36 36 0 0 1 36 36v264.528a36 36 0 0 1-36 36H180.96a36 36 0 0 1-36-36V179.456a36 36 0 0 1 36-36h262.32z m285.632 16.912l-136.144 136.128 134.576 134.56 136.144-136.112-134.576-134.576z m-321.632 55.088H216.96v192.528h190.32V215.456z" fill="#888888"></path>
+                    </svg>
+                    <span>MEMO</span>
+                </div>
+                <div>
+                    <svg t="1628236438577" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                        <path d="M486.2976 102.314667c-240.315733 0-435.131733 170.530133-435.131733 380.893867 0 120.2176 63.778133 227.259733 163.1744 297.0624l0 192.6656 190.634667-115.729067c26.368 4.369067 53.504 6.877867 81.322667 6.877867 240.315733 0 435.1488-170.513067 435.1488-380.8768S726.596267 102.314667 486.2976 102.314667zM268.731733 537.634133c-30.037333 0-54.391467-24.3712-54.391467-54.408533 0-30.071467 24.354133-54.408533 54.391467-54.408533s54.391467 24.354133 54.391467 54.408533C323.1232 513.262933 298.769067 537.634133 268.731733 537.634133zM486.2976 537.634133c-30.037333 0-54.391467-24.3712-54.391467-54.408533 0-30.071467 24.354133-54.408533 54.391467-54.408533s54.391467 24.354133 54.391467 54.408533C540.689067 513.262933 516.334933 537.634133 486.2976 537.634133zM703.863467 537.634133c-30.0544 0-54.408533-24.3712-54.408533-54.408533 0-30.071467 24.354133-54.408533 54.408533-54.408533 30.037333 0 54.391467 24.354133 54.391467 54.408533C758.254933 513.262933 733.9008 537.634133 703.863467 537.634133z" fill="#888888"></path>
+                    </svg>
+                    <span>微信输入</span>
+                </div>
+                <div>
+                    <svg t="1628236539882" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                        <path d="M507.056 833.35h-308.99c-27.191 0-49.439-7.416-66.742-24.72-7.416-7.415-9.888-17.303-9.888-27.19V311.774c0-27.191 29.663-49.438 64.27-51.91h64.27c9.888 0 14.832-2.472 14.832-9.888v-19.775c4.943-19.776 19.775-29.663 44.494-29.663 19.776 0 34.607 12.36 37.08 32.135v2.472c2.471 27.19 2.471 27.19 34.606 27.19h269.44c12.36 0 17.303-2.471 17.303-12.359v-17.303c2.472-19.776 19.776-29.663 42.023-29.663 22.247 0 37.079 12.36 39.55 29.663 0 9.887-4.943 22.247 2.473 27.19 9.887 4.945 24.719 2.473 37.078 2.473h37.08c37.078 2.472 66.741 24.719 66.741 54.382V781.44c0 32.135-32.135 54.382-76.63 56.854-98.876-4.944-205.169-4.944-308.99-4.944z m2.472-422.699h-308.99c-12.36 0-17.304 2.472-17.304 12.36v341.125c0 14.832 7.416 17.304 22.247 17.304h608.094c22.247 0 22.247 0 22.247-17.304V425.483c0-12.36-2.472-14.832-17.303-14.832h-308.99z" fill="#888888"></path>
+                        <path d="M316.718 707.282h-39.55c-17.304 0-24.72-7.416-27.192-19.775v-42.023c0-12.36 9.888-19.776 24.72-19.776h84.045c17.303 0 24.719 7.416 24.719 22.248v39.55c0 12.36-7.416 19.776-24.72 19.776h-42.022z m192.81 0h-39.55c-17.304 0-27.192-7.416-27.192-19.775v-39.551c0-14.832 7.416-19.776 24.72-22.248h81.573c14.831 0 24.72 7.416 24.72 19.776v42.023c0 12.36-9.889 19.775-24.72 19.775h-39.55z m192.81-81.574h42.023c14.831 0 24.72 7.416 22.247 19.776v44.495c0 12.36-9.888 19.775-24.72 19.775h-84.044c-14.832 0-24.72-7.416-24.72-19.775v-42.023c0-12.36 9.888-19.776 24.72-19.776 14.831-4.943 29.663-2.472 44.494-2.472z m-192.81-59.326h-42.023c-17.303 0-24.719-4.944-24.719-19.775v-44.495c0-12.36 7.416-17.303 22.247-17.303h86.518c14.831 0 22.247 7.416 24.719 19.775v42.023c0 12.36-7.416 19.775-24.72 19.775h-42.022z m-192.81-81.573h42.023c14.831 0 24.719 7.416 24.719 17.303v44.495c0 12.36-7.416 17.303-22.247 17.303h-86.518c-14.831 0-22.247-4.943-22.247-17.303V499.64c0-12.36 9.888-17.303 24.72-17.303 12.359 2.472 24.718 2.472 39.55 2.472z m383.148 81.573h-42.022c-14.832 0-24.72-7.415-24.72-19.775v-44.495c0-12.36 7.416-17.303 22.248-17.303h86.517c14.831 0 22.247 7.416 22.247 17.303v44.495c0 9.888-7.416 17.303-22.247 17.303-12.36 2.472-27.191 2.472-42.023 2.472z" fill="#888888"></path>
+                    </svg>
+                    <span>每日回顾</span>
+                </div>
+                <div>
+                    <svg t="1628236576670" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                        <path d="M740.950432 546.410302l118.313636-144.866467H529.43094v-41.364615h200.139707l106.030694-145.047098L729.751279 70.265655H529.43094V28.539778h-58.343976v41.725877H164.916564l118.313635 144.866467-118.313635 145.047098h306.1704v41.364615h-176.838243l-105.66943 144.866467 105.850062 145.047098h176.657611v304.002822h58.343976V691.4574h329.833128z" fill="#888888"></path>
+                        <path d="M740.950432 546.410302l118.313636-144.866467H529.43094v-41.364615h200.139707l106.030694-145.047098L729.751279 70.265655H529.43094V28.539778h-58.343976v41.725877H164.916564l118.313635 144.866467-118.313635 145.047098h306.1704v41.364615h-176.838243l-105.66943 144.866467 105.850062 145.047098h176.657611v304.002822h58.343976V691.4574h329.833128z" fill="#888888"></path>
+                    </svg>
+                    <span>随机漫步</span>
+                </div>
+            </div>
+
+            <div class="tag-box">
+                <div class="tap-text">置顶标签</div>
+                <div class="tag selected"># <span>备忘</span></div>
+            </div>
+
+            <div class="tag-box">
+                <div class="tap-text">全部标签</div>
+                <div class="tag selected"># <span>test</span></div>
+                <div class="tag"># <span>笔记方法</span></div>
+                <div class="tag"># <span>代办</span></div>
+            </div>
+
+            <div class="trash selected">
+                <svg t="1628239845970" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                    <path d="M927.999696 64.000337H687.999781l-18.799994-37.399986A47.999983 47.999983 0 0 0 626.199802 0.00036H397.599883a47.439983 47.439983 0 0 0-42.799985 26.599991L335.999904 64.000337H95.999989A31.999989 31.999989 0 0 0 64 96.000326v63.999978a31.999989 31.999989 0 0 0 31.999989 31.999988h831.999707a31.999989 31.999989 0 0 0 31.999989-31.999988V96.000326a31.999989 31.999989 0 0 0-31.999989-31.999989zM170.399963 934.000032a95.999966 95.999966 0 0 0 95.799966 89.999968h491.599827a95.999966 95.999966 0 0 0 95.799966-89.999968L895.999708 256.00027H127.999978z" fill="#777777"></path>
+                </svg>
+                <span>回收站</span>
+            </div>
+        </section>
     </div>
     <div class="right">
         <header>
             <div class="head-title">
-                MEMO
+                <span>MEMO</span>
                 <span>
                 <svg t="1627987087438" viewBox="0 0 1024 1024" version="1.1"
                      xmlns="http://www.w3.org/2000/svg" p-id="2011" width="20" height="20">
@@ -59,18 +149,39 @@
                 <button class="btn btn-outline-success" type="button" id="button-addon">Search</button>
             </div>
         </header>
+
+        <div class="inputBox">
+            <textarea rows="1"></textarea>
+            <div class="tools">
+                <span class="unsvg">#</span>
+                <span class="nsvg"><svg t="1628243285962" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path d="M287.957 192.427h-64c-17.642 0-31.957 14.293-31.957 31.914v63.915c0 17.621 14.293 31.915 31.957 31.915h64c17.643 0 31.958-14.294 31.958-31.915v-63.915c0-17.621-14.294-31.914-31.958-31.914z m0 255.573h-64C206.315 448 192 462.293 192 479.915v63.914c0 17.622 14.293 31.915 31.957 31.915h64c17.643 0 31.958-14.293 31.958-31.915v-63.914c0-17.622-14.294-31.915-31.958-31.915z m0 255.573h-64c-17.642 0-31.957 14.294-31.957 31.915v63.915c0 17.621 14.293 31.914 31.957 31.914h64c17.643 0 31.958-14.293 31.958-31.914v-63.915c0-17.621-14.294-31.915-31.958-31.915z m127.915-415.317h383.83a31.936 31.936 0 1 0 0-63.83h-383.83a31.936 31.936 0 1 0 0 63.83z m383.83 191.659h-383.83a31.936 31.936 0 1 0 0 63.829h383.83a31.936 31.936 0 1 0 0-63.83z m0 255.573h-383.83a31.936 31.936 0 1 0 0 63.83h383.83a31.936 31.936 0 1 0 0-63.83z" p-id="23301" fill="#111111"></path></svg></span>
+                <span class="nsvg"><svg t="1628243383302" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="24254" width="18" height="18"><path d="M322.88 481.76v-95.84h-126.24v41.92h84.16v32.96l-84.16 39.36v96h126.24v-42.08h-84.16v-32.8l84.16-39.52zM196.64 806.4v41.92h126.24V638.08h-126.24v42.08h84.16v42.08h-84.16v42.08h84.16v42.08h-84.16zM406.88 217.76h420.48v84.16H406.88zM406.88 722.24h420.48v84.16H406.88zM406.88 469.92h420.48v84.16H406.88zM280.8 343.84V175.68h-84.16v42.08h42.08v126.08h42.08z"  fill="#111111"></path></svg></span>
+                <span style="font-weight: bold;" class="unsvg">B</span>
+                <span class="unsvg"><u>U</u></span>
+
+                <button>发送</button>
+            </div>
+        </div>
+        <div class="textArea">
+            <div class="text">
+                <h5>time</h5>
+            </div>
+            <div class="text"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+        </div>
     </div>
 </div>
 
-<footer>
+<footer class="visually-hidden">
     <small>本项目为flomo的模仿网站，仅用于个人开发学习！</small>
     <a href="https://flomoapp.com/" style="color: #55BB8E;">flomo官网</a>
     <a href="../../index.html" class="btn btn-outline-secondary btn-sm">back</a>
 </footer>
 
-<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-<script src="../../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <script src="../js/toggole.js"></script>
 </body>

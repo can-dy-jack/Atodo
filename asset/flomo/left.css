@@ -1,0 +1,127 @@
+.flomoBox{
+    width: 820px;
+    height: 100%;
+    display: flex;flex-direction: row;
+}
+/* left */
+.flomoBox .left{
+    width: 240px;
+    height: 100vh;
+    overflow: auto;
+}
+.left::-webkit-scrollbar {
+    width: 0!important;
+    height: 0!important;
+}
+.flomoBox .left header{
+    display: flex;flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 5px;
+}
+.flomoBox .left header svg{
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.flomoBox .left .cal{
+    margin: 25px 10px 15px 10px;
+    color: var(--grey-1);
+}
+.left .cal>div{
+    display: flex;justify-content: space-between;
+}
+.left .cal .cal-number>div{
+    font-size: 24px;
+}
+.left .cal .cal-text>div{
+    font-size: 13px;
+}
+
+.left .calendar{
+    margin: 10px;
+    display: flex;flex-direction: column;
+}
+.left .calendar>div{ 
+    margin: -4px 0;
+}
+.left .calendar div button{
+    width: 14px;height: 14px;
+    background-color: #e2e2e2;
+    outline: none;border: none;
+    border-radius: 2px;
+    margin: 2px;
+}
+.left .calendar .c-1 button:nth-child(10){
+    background-color: rgba(85, 187, 142,.5);
+}
+.left .calendar .c-2 button:nth-child(12){
+    background-color: rgba(85, 187, 142,.5);
+}
+.left .calendar .c-3 button:nth-child(11){
+    background-color: rgba(85, 187, 142,.5);
+}
+.left .calendar .c-4 button:nth-child(9){
+    background-color: rgba(85, 187, 142,.5);
+}
+.left .calendar .c-7 button:nth-child(10){
+    background-color: rgba(85, 187, 142,.5);
+}
+.calendar .month{
+    display: flex;justify-content: space-between;
+}
+.calendar .month span{
+    color: var(--grey-1);
+    font-size: 12px; 
+    margin-top: 5px;
+}
+
+.left section{
+    margin-bottom: 30px;
+    margin: 20px 0;
+    font-size: 14px;
+}
+.left section .toggle{
+    margin: 10px 0;
+}
+.left section .toggle div{
+    height: 35px;
+    padding-left: 12px;
+    cursor: pointer;
+}
+.left section .toggle div span{
+    font-size: 14px;
+    line-height: 35px;
+}
+.selected{
+    color: var(--main);
+    background-color: var(--flomo);
+    border-radius: 4px;
+}
+.selected svg path{
+    fill: var(--main);
+}
+.left section .tag-box .tap-text{
+    color: rgba(145, 125, 59, .6);
+    font-size: 16px;
+    margin: 10px 0 5px 15px;
+}
+.left section .tag-box .tag{
+    font-size: 16px;
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 15px;
+}
+.left section .tag-box .tag span{
+    font-size: 16px;
+}
+.left .trash{
+    height: 35px;
+    line-height: 35px;
+    padding-left: 15px;
+    cursor: pointer;
+    margin: 40px 0 -8px 0;
+}
+.left .trash span{
+    font-size: 16px;
+}
